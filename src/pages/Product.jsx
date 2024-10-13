@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
-import RelatedProduct from '../components/relatedProduct';
+import RelatedProduct from '../components/RelatedProduct';
 
 const Product = () => {
 
@@ -13,7 +13,7 @@ const Product = () => {
   const [size, setSize] = useState('')
 
   const fetchProductData = async () => {
-    
+
     products.map((item) => {
       if (item._id === productId) {
         setProductData(item)
